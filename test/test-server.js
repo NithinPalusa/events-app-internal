@@ -63,6 +63,8 @@ describe('GET /', function() {
       .end((err, res) => {
         if (err) {
           return done(err);
+
+        //Hello
         }
         chai.expect(JSON.parse(res.text).events.length).to.equal(3);
         return done();
